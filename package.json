@@ -1,0 +1,21 @@
+{
+  "name": "mk-testmanager",
+  "description": "A testmanager solution. Manages test suites, test cases, test results and metrics",
+  "version": "1.0.0",
+  "author": {
+    "name": "Maurice Koster"
+  },
+  "license": "SEE LICENSE IN LICENSE",
+  "homepage": "https://github.com/mauricekoster/testmanager/wiki",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mauricekoster/testmanager"
+  },
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "ejs": "^2.5.2",
+    "express": "^4.14.0",
+    "mongojs": "^2.4.0"
+  }
+}
