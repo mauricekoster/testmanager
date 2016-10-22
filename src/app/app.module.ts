@@ -4,17 +4,21 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { MaterialModule } from '@angular/material';
 
-import { AppComponent } from './app.component';
+import {AppComponent} from './app.component';
+import {MkTestManagerRoutingModule} from './app-routing.module';
+import {HomeComponent} from './home/home.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
     MaterialModule.forRoot(),
     FormsModule,
-    HttpModule
+    HttpModule,
+    MkTestManagerRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
