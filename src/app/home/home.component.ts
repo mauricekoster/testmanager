@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-home',
@@ -7,9 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  title = 'MK Test Manager';
-
-  isDarkTheme: boolean = false;
+  @Input() isDarkTheme;
 
   foods: any[] = [
     {name: 'Pizza', rating: 'Excellent'},

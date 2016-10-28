@@ -1,1 +1,23 @@
+<md-toolbar color="primary">
+  <button class="app-icon-button" (click)="sidenav.toggle()">
+    <i class="material-icons app-toolbar-menu">menu</i>
+  </button> {{title}}
+
+  <span class="app-toolbar-filler"></span>
+
+  <button class="app-icon-button" (click)="isDarkTheme = !isDarkTheme"><i class="material-icons app-toolbar-menu">star_half</i></button>
+
+  <button md-mini-fab>
+    <md-icon class="md-24">add</md-icon>
+  </button>
+
+  <button md-icon-button [md-menu-trigger-for]="anchorMenu">
+    <md-icon class="md-24">more_vert</md-icon>
+  </button>
+</md-toolbar>
+<md-menu #anchorMenu="mdMenu" x-position="before" #posXMenu="mdMenu" class="before">
+  <a md-menu-item *ngFor="let item of items" href="http://www.google.com" [disabled]="item.disabled">
+    {{ item.text }}
+  </a>
+</md-menu>
 <router-outlet></router-outlet>
