@@ -7,11 +7,22 @@ import { MaterialModule } from '@angular/material';
 import {AppComponent} from './app.component';
 import {MkTestManagerRoutingModule} from './app-routing.module';
 import {HomeComponent} from './home/home.component';
+import { TestPageComponent } from './testpage/testpage.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { AdministrationComponent } from './administration/administration.component';
+import { ProjectMainComponent } from './project-main/project-main.component';
+import { AdministrationMainComponent } from './administration-main/administration-main.component';
+import { TestmanagerService } from './testmanager.service';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    TestPageComponent,
+    DashboardComponent,
+    AdministrationComponent,
+    ProjectMainComponent,
+    AdministrationMainComponent
   ],
   imports: [
     BrowserModule,
@@ -20,7 +31,7 @@ import {HomeComponent} from './home/home.component';
     HttpModule,
     MkTestManagerRoutingModule
   ],
-  providers: [],
+  providers: [TestmanagerService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
